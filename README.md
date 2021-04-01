@@ -106,7 +106,7 @@ gcc main.c -o exe -lprintfcolor -Ldir
 ```
 
 >dir is the directory of the library (libprintfcolor.so)
-
+>
 >Don't forget to add dir at LD_LIBRARY_PATH
 > export LD_LIBRARY_PATH=/path/to/dir:$LD_LIBRARY_PATH
 
@@ -118,5 +118,4 @@ gcc -Ldir -Wl,-rpath dir -o exe main.c -lprintfcolor
 > dir is the directory of the library (libprintfcolor.so)
 >
 > To have more information on dynamic library whith gcc : https://www.cprogramming.com/tutorial/shared-libraries-linux-gcc.html
-
 
