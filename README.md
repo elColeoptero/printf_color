@@ -119,3 +119,4 @@ gcc -Ldir -Wl,-rpath dir -o exe main.c -lprintfcolor
 >
 > To have more information on dynamic library whith gcc : https://www.cprogramming.com/tutorial/shared-libraries-linux-gcc.html
 
+### If you have any issue with the library or any cool idea please use [Github Issue](https://github.com/elColeoptero/printf_color/issues)
