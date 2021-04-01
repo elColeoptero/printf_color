@@ -1,3 +1,11 @@
+/**
+ * @file printfcolor.c
+ * @author Elcoleoptero
+ * @date 31/03/2021
+ * @brief Library which add printfColor
+ *
+ * @see https://github.com/elColeoptero/printf_color
+ */
 #include <stdarg.h>
 #include <stdio.h>
 #include <stdlib.h>
