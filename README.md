@@ -14,6 +14,18 @@ First step is call initFormatting to initialize the setup of printf_color.
 initFormatting();
 ```
 
+### Color 
+There are 8 colors available. 
+* BLACK
+* RED
+* GREEN
+* YELLOW
+* BLUE
+* PURPLE
+* CYAN
+* WHILE
+
+
 ### Printf_color
 
 Then the printf_color has the same usage as printf. The argument processing is exactly the same. 
@@ -51,6 +63,11 @@ enableUnderline(true); // to activate
 enableUnderline(false); // to desactivate
 ```
 > If you don't want to use stdbool library : true = 1 / false = 0
+
+### Limitation 
+
+If you have a string argument that contains \n the background, the line after \n might have a problem. 
+So avoid string argument with \n.
 
 ## Compilation
 
