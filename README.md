@@ -2,14 +2,57 @@
 
 ## Introduction
 
-In c, display color in terminale its not always easy while sometimes it's realy useful. So i was like "why not propose a rewrite of printf ? But a printf with colors "
+In c, display color in terminale its not always easy while sometimes it's realy useful. So I was like "why not propose a rewrite of printf ? But a printf with colors "
 
 
-## Code Samples
+## Usage 
 
-You've gotten their attention in the introduction, now show a few code examples. So they get a visualization and as a bonus, make them copy/paste friendly.
+### Initialization
 
-## Installation
+First step is call initFormatting to initialize the setup of printf_color.
+```c
+initFormatting();
+```
+
+### Printf_color
+
+Then the printf_color has the same usage as printf. The argument processing is exactly the same. 
+```
+printf_color("Hello World\n");
+printf_color("Hello %s","John");
+printf_color("%d / %d",10,20);
+```
+### Font Color
+
+You can change the font color with setFontColor.
+```c
+setFontColor(RED);
+setFontColor(BLUE);
+```
+### Background 
+
+You can activate the background with enableBackground
+```c
+enableBackground(true); // to activate 
+enableBackground(false); // to desactivate
+```
+> If you don't want to use stdbool library : true = 1 / false = 0
+
+You can change the background color with setFontColor.
+```c
+setBackgroundColor(GREEN);
+setBackgroundColor(YELLOW);
+```
+### Underline 
+
+You can activate underline with enableUnderline
+```c
+enableUnderline(true); // to activate 
+enableUnderline(false); // to desactivate
+```
+> If you don't want to use stdbool library : true = 1 / false = 0
+
+## Compilation
 
 The compilation is basic. You have 3 solutions : 
 
@@ -56,6 +99,7 @@ gcc main.c -o exe -lprintfcolor -Ldir
 gcc -Ldir -Wl,-rpath dir -o exe main.c -lprintfcolor
 ```
 > dir is the directory of the library (libprintfcolor.so)
+>
 > To have more information on dynamic library whith gcc : https://www.cprogramming.com/tutorial/shared-libraries-linux-gcc.html
 
 
